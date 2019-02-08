@@ -1,4 +1,5 @@
 import React from 'react'
+import GoodyBag from './GoodyBag'
 
 const Root = () => {
   return (
@@ -8,7 +9,7 @@ const Root = () => {
       </nav>
       <main>
         <h1>Welcome to the Goodie Bag!</h1>
-        <p>What a nice home page for your goodies!</p>
+        <GoodyBag />
       </main>
     </div>
   )
