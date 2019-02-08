@@ -6,11 +6,11 @@ The requirements below are broken into step-by-step instructions, which model th
 
 #### Backend
 
-- [ ] Write a `candies` model with the following information:
-  - [ ] name - not empty or null
-  - [ ] description - not empty or null
-  - [ ] quantity - cannot exceed 10 of the same candy in your goodie bag
-  - [ ] imageUrl - with a default value
+- [x] Write a `candies` model with the following information:
+  - [x] name - not empty or null
+  - [x] description - not empty or null
+  - [x] quantity - cannot exceed 10 of the same candy in your goodie bag
+  - [x] imageUrl - with a default value
 - [ ] Write a route to serve up all candies
 
 #### Frontend

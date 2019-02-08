@@ -20,7 +20,41 @@ const candies = [{
   description: 'Melts in your mouth, not in your hand',
   quantity: 4,
   imageUrl: 'http://www.ocsaccess.com/admin/clientfiles/ucsne/images/xlarge/mm%20choc.jpg'
-}];
+},/* {
+  // Empty name, will fail validation'
+  name: '',
+  description: 'Yuck',
+  quantity: 1,
+  imageUrl: 'foo1.bar'
+},
+{
+  // Empty description, will fail validation'
+  name: 'Blah',
+  description: '',
+  quantity: 1,
+  imageUrl: 'foo2.bar'
+},
+{
+  // Empty name & description, will fail validation'
+  name: '',
+  description: '',
+  quantity: 1,
+  imageUrl: 'foo3.bar'
+},
+{
+  // Too many, will fail validation
+  name: 'Too Much',
+  description: 'Yuck',
+  quantity: 11,
+  imageUrl: 'foo4.bar'
+},
+{
+  // default image
+  name: 'Generic Candy',
+  description: 'Yum',
+  quantity: 7,
+}*/
+];
 
 const seed = async () => {
   try {
