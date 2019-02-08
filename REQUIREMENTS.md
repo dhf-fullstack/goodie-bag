@@ -11,7 +11,7 @@ The requirements below are broken into step-by-step instructions, which model th
   - [x] description - not empty or null
   - [x] quantity - cannot exceed 10 of the same candy in your goodie bag
   - [x] imageUrl - with a default value
-- [ ] Write a route to serve up all candies
+- [x] Write a route to serve up all candies
 
 #### Frontend
 - [ ] Write a candies sub-reducer to manage candies in your Redux store

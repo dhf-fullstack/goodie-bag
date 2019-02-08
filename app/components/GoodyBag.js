@@ -1,22 +1,42 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchCandies } from '../store';
 
-function GoodyBag () {
-  const candies = [
-    {id: 0, name: 'a', description: 'b', quantity: 12, url: 'c'},
-    {id: 1, name: 'd', description: 'e', quantity: 1, url: 'f'},
-  ];
-  return (
-    <ul> {
-       candies.map(candy => (
-        <li key={candy.id}>
-          {candy.name}
-          {candy.description}
-          {candy.quantity}
-          {candy.url}
-        </li>
-       ))
-    } </ul>
-  );
+class GoodyBag extends Component {
+
+  componentDidMount() {
+    console.log('GoodyBag Did Mount')
+    this.props.fetchCandies();
+  }
+
+  render() {
+    console.log('GoodyBag renders')
+    return (
+      <ul> {
+        this.props.candies.map(candy => (
+          <li key={candy.id}>
+            {candy.name}
+            {candy.description}
+            {candy.quantity}
+            {candy.url}
+          </li>
+        ))
+      }
+      </ul>
+    );
+  }
 }
 
-export default GoodyBag;
+const mapStateToProps = (state) => {
+  return {
+    candies: state.candies
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchCandies: () => dispatch(fetchCandies()),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(GoodyBag);
