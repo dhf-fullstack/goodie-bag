@@ -5,12 +5,10 @@ import { fetchCandies } from '../store';
 class GoodyBag extends Component {
 
   componentDidMount() {
-    console.log('GoodyBag Did Mount')
     this.props.fetchCandies();
   }
 
   render() {
-    console.log('GoodyBag renders')
     return (
       <ul> {
         this.props.candies.map(candy => (
@@ -29,7 +27,7 @@ class GoodyBag extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    candies: state.candies
+    candies: state.candies.candies
   }
 }
 

@@ -14,8 +14,8 @@ The requirements below are broken into step-by-step instructions, which model th
 - [x] Write a route to serve up all candies
 
 #### Frontend
-- [ ] Write a candies sub-reducer to manage candies in your Redux store
-- [ ] Write a component to display a list of all candies
+- [x] Write a candies sub-reducer to manage candies in your Redux store
+- [x] Write a component to display a list of all candies
 - [ ] Display the all-candies component when the url matches `/candies`
 - [ ] Add links to the navbar that can be used to navigate to the all-candies view and the home view (`/`)
 
