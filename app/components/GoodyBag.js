@@ -13,10 +13,10 @@ class GoodyBag extends Component {
       <ul> {
         this.props.candies.map(candy => (
           <li key={candy.id}>
-            {candy.name}
-            {candy.description}
-            {candy.quantity}
-            {candy.url}
+            <span>{candy.name}</span>
+            <span>{candy.description}</span>
+            <span>{candy.quantity}</span>
+            <img className="candyImg" src={`${candy.imageUrl}`} />
           </li>
         ))
       }

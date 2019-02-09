@@ -35,3 +35,7 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+
+.candyImg {
+  height: 100px;
+}
